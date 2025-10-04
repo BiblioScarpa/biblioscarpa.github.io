@@ -4,6 +4,7 @@ body {
   padding: 0 1rem;
   font-size: 110%;
 }
+
 header {
   display: flex;
   align-items: center;
@@ -12,34 +13,62 @@ header {
   color: white;
   padding: 1rem;
   position: relative;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;  /* non andare a capo */
 }
+
 .title-container {
-  display: flex;
-  flex-direction: column;
+  flex-shrink: 1;      /* permetti il ridimensionamento */
+  min-width: 0;        /* evita overflow */
+  padding-right: 60px; /* spazio per icona menu */
+  box-sizing: border-box;
 }
+
 .title {
   font-size: 1.5rem;
   margin: 0;
+  word-break: break-word; /* va a capo se troppo lungo */
 }
+
 .subtitle {
   font-size: 1rem;
   margin: 0;
   opacity: 0.8;
+  word-break: break-word;
 }
+
 .hamburger {
-  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   width: 25px;
   height: 18px;
+  cursor: pointer;
+  z-index: 10;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .hamburger div {
   background: white;
   height: 3px;
   border-radius: 2px;
 }
+
+/* Mobile specific */
+@media (max-width: 600px) {
+  header {
+    flex-wrap: nowrap;
+  }
+  .title-container {
+    padding-right: 60px;
+  }
+  .hamburger {
+    top: 1rem;
+    right: 1rem;
+  }
+}
+
 
 /* Menu inizialmente nascosto e animato */
 nav.menu {
