@@ -7,6 +7,7 @@ const menuItems = [
   { href: "#link2", text: "Link 12" },
   { href: "#link3", text: "Link 13" },
   { href: "#link4", text: "Link 14" },
+  { href: "privacypolicy.html", text: "Cookie policy e Privacy" },
 ];
 
 function populateMenu() {

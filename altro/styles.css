@@ -113,7 +113,7 @@ nav.menu ul li a:hover {
   text-align: center;  /* Centra tutto il contenuto */
   font-size: 1.3rem;  /* aumenta la dimensione del carattere */
   font-style: italic;
-  margin: 1rem 0 1.5rem 0;
+  margin: 1rem 0 1.2rem 0;
 }
 .breadcrumb-label {
   font-weight: bold;
