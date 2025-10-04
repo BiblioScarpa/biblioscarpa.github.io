@@ -76,3 +76,30 @@ menu.querySelectorAll('a').forEach(link =>
   })
 );
 
+const modal = document.getElementById('imgModal');
+const thumbImage = document.getElementById('imgThumb');
+const closeBtn = document.getElementById('closeModal');
+
+thumbImage.addEventListener('click', () => {
+  modal.style.display = 'flex';
+});
+
+closeBtn.addEventListener('click', () => {
+  modal.style.display = 'none';
+});
+
+// Chiudi cliccando fuori
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = 'none';
+  }
+}
+
+// Premere ESC per chiudere
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    modal.style.display = 'none';
+  }
+});
+
+
