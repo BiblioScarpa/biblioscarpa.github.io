@@ -4,10 +4,10 @@ const menuItems = [
     href: isIndex ? 'index.html' : '../index.html', // no # alla fine
     text: 'Home'
   },
-  { href: "#link2", text: "Link 12" },
-  { href: "#link3", text: "Link 13" },
-  { href: "#link4", text: "Link 14" },
-  { href: "privacypolicy.html", text: "Cookie policy e Privacy" },
+  { href: isIndex ? 'pagine/risorse.html' :"risorse.html", text: "risorse e strumenti" },
+  { href: isIndex ? 'pagine/gestione.html' :"gestione.html", text: "gestione della biblioteca" },
+  { href: isIndex ? 'pagine/chisiamo.html' :"chisiamo.html", text: "chi siamo" },
+  { href: isIndex ? 'pagine/privacypolicy.html' :"privacypolicy.html", text: "Cookie policy e Privacy" },
 ];
 
 function populateMenu() {
