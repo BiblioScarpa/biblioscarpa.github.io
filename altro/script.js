@@ -4,9 +4,9 @@ const menuItems = [
     href: isIndex ? 'index.html' : '../index.html', // no # alla fine
     text: 'Home'
   },
+  { href: isIndex ? 'pagine/chisiamo.html' :"chisiamo.html", text: "chi siamo" },
   { href: isIndex ? 'pagine/risorse.html' :"risorse.html", text: "risorse e strumenti" },
   { href: isIndex ? 'pagine/gestione.html' :"gestione.html", text: "gestione della biblioteca" },
-  { href: isIndex ? 'pagine/chisiamo.html' :"chisiamo.html", text: "chi siamo" },
   { href: isIndex ? 'pagine/privacypolicy.html' :"privacypolicy.html", text: "Cookie policy e Privacy" },
 ];
 
